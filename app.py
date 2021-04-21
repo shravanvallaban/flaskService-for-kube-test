@@ -7,7 +7,9 @@ import config
 app = Flask(__name__)
 
 app.config["MONGODB_DB"] = "myFirstDatabase"
-app.config['MONGO_URI'] = 'mongodb+srv://'+config.USERNAME+':'+config.PASSWORD+'@cluster0.og2k6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+app.config['MONGO_URI'] = 'mongodb+srv://admin:admin@cluster0.og2k6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+
+# app.config['MONGO_URI'] = 'mongodb+srv://'+config.USERNAME+':'+config.PASSWORD+'@cluster0.og2k6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 
 mongo = PyMongo(app)
 
