@@ -20,7 +20,7 @@ mongo = PyMongo(app)
 def get_elite_users(year):
     data = mongo.db.myData.aggregate(
         [{"$match": {"elite": {"$regex": year}}}])
-
+    # print(data)
     output = json.dumps(list(data), default=str)
     # print(output)
     # for obj in data:
