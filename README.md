@@ -1,2 +1,2 @@
-# kubernetes-load-test
+# flaskService-for-kube-test
 
