@@ -1,2 +1,2 @@
-# scratch-272 
+# kubernetes-load-test
 
